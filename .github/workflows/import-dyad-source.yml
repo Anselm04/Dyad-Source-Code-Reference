@@ -68,7 +68,9 @@ jobs:
           # Do this only AFTER verifying the original Git tree is exact.
           # Upstream is nested under upstream/; original file paths, including
           # upstream/.github/workflows, are data and are preserved unchanged.
-          git add -A
+          # Commit only the exact preverified index tree. The shallow checkout's
+          # original working directory remains present, but MUST NOT be staged.
+          test "$(git ls-tree --name-only "$(git write-tree)")" = "upstream"
           git -c core.hooksPath=/dev/null commit -m "Reference source snapshot of dyad-inc/dyad at $(cat ../UPSTREAM_COMMIT) (workflow paths relocated)"
           git fsck --no-reflogs --connectivity-only
 
