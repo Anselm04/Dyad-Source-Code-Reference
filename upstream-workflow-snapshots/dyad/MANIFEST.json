@@ -1,0 +1,146 @@
+{
+  "source": "https://github.com/dyad-sh/dyad.git",
+  "commit": "1f3e4023af4bdd919be38e552b9494f6b10eb73f",
+  "number_of_original_workflow_files": 23,
+  "original_ci_is_disabled": true,
+  "files": [
+    {
+      "upstream_path": ".github/workflows/README.md",
+      "reference_path": "upstream-workflow-snapshots/dyad/.github/workflows/README.md",
+      "git_blob": "9b31022e31676c5725263e1ea4eb7efbef238ca0",
+      "original_mode": "100644"
+    },
+    {
+      "upstream_path": ".github/workflows/cancel-ci-after-merge.yml",
+      "reference_path": "upstream-workflow-snapshots/dyad/.github/workflows/cancel-ci-after-merge.yml",
+      "git_blob": "e895c9012e9580b9c7a45eb7e23f28ee8e11dbd2",
+      "original_mode": "100644"
+    },
+    {
+      "upstream_path": ".github/workflows/cancel-claude-pr-review-after-merge.yml",
+      "reference_path": "upstream-workflow-snapshots/dyad/.github/workflows/cancel-claude-pr-review-after-merge.yml",
+      "git_blob": "cd7a1327eebe5e474bf9e78c1aac626a69a6789a",
+      "original_mode": "100644"
+    },
+    {
+      "upstream_path": ".github/workflows/ci.yml",
+      "reference_path": "upstream-workflow-snapshots/dyad/.github/workflows/ci.yml",
+      "git_blob": "bee0b9ab2ec6b413ac7e6e1709adb495e989b006",
+      "original_mode": "100644"
+    },
+    {
+      "upstream_path": ".github/workflows/cla.yml",
+      "reference_path": "upstream-workflow-snapshots/dyad/.github/workflows/cla.yml",
+      "git_blob": "ecf0596fa11b148a01184394f6a4ebc02456160d",
+      "original_mode": "100644"
+    },
+    {
+      "upstream_path": ".github/workflows/claude-check-workflows.yml",
+      "reference_path": "upstream-workflow-snapshots/dyad/.github/workflows/claude-check-workflows.yml",
+      "git_blob": "ccd8643478b2cdf5b1e8a2ad1f43bcb8c8c98b71",
+      "original_mode": "100644"
+    },
+    {
+      "upstream_path": ".github/workflows/claude-deflake-e2e.yml",
+      "reference_path": "upstream-workflow-snapshots/dyad/.github/workflows/claude-deflake-e2e.yml",
+      "git_blob": "98a0c86de3310a66cb10d933f650290d4e4c8738",
+      "original_mode": "100644"
+    },
+    {
+      "upstream_path": ".github/workflows/claude-pr-review-run.yml",
+      "reference_path": "upstream-workflow-snapshots/dyad/.github/workflows/claude-pr-review-run.yml",
+      "git_blob": "3ddc8420294c6f282701ce58502a5b09775fae89",
+      "original_mode": "100644"
+    },
+    {
+      "upstream_path": ".github/workflows/claude-pr-review.yml",
+      "reference_path": "upstream-workflow-snapshots/dyad/.github/workflows/claude-pr-review.yml",
+      "git_blob": "2febe676f3f14b5c7b6313cd537ed67466c54dc5",
+      "original_mode": "100644"
+    },
+    {
+      "upstream_path": ".github/workflows/claude-rules-review.yml",
+      "reference_path": "upstream-workflow-snapshots/dyad/.github/workflows/claude-rules-review.yml",
+      "git_blob": "68b8198cdc9b6225bfcce0883069ffc34ae670db",
+      "original_mode": "100644"
+    },
+    {
+      "upstream_path": ".github/workflows/claude-triage.yml",
+      "reference_path": "upstream-workflow-snapshots/dyad/.github/workflows/claude-triage.yml",
+      "git_blob": "736f34dc1aa285638308f0aa5a360e77c49a7e42",
+      "original_mode": "100644"
+    },
+    {
+      "upstream_path": ".github/workflows/claude-windows-pr-review.yml",
+      "reference_path": "upstream-workflow-snapshots/dyad/.github/workflows/claude-windows-pr-review.yml",
+      "git_blob": "c8e6f2545b4599434ff7103c494d0241e139b3d8",
+      "original_mode": "100644"
+    },
+    {
+      "upstream_path": ".github/workflows/close-stale-prs.yml",
+      "reference_path": "upstream-workflow-snapshots/dyad/.github/workflows/close-stale-prs.yml",
+      "git_blob": "4da14b961fbadfb7b0780cae2dc2b67afc401dcd",
+      "original_mode": "100644"
+    },
+    {
+      "upstream_path": ".github/workflows/closed-issue-comment.yml",
+      "reference_path": "upstream-workflow-snapshots/dyad/.github/workflows/closed-issue-comment.yml",
+      "git_blob": "15178e2125b6b98f9c2c1a41024adc96d6887d79",
+      "original_mode": "100644"
+    },
+    {
+      "upstream_path": ".github/workflows/codex-pr-review.yml",
+      "reference_path": "upstream-workflow-snapshots/dyad/.github/workflows/codex-pr-review.yml",
+      "git_blob": "85e3a28db87a3b87901ee1c628f79bab0c1d1fcc",
+      "original_mode": "100644"
+    },
+    {
+      "upstream_path": ".github/workflows/draft-stale-prs.yml",
+      "reference_path": "upstream-workflow-snapshots/dyad/.github/workflows/draft-stale-prs.yml",
+      "git_blob": "1df09facec5239b1c3aa456832dc109754f8fa42",
+      "original_mode": "100644"
+    },
+    {
+      "upstream_path": ".github/workflows/github-security-advisory-alerts.yml",
+      "reference_path": "upstream-workflow-snapshots/dyad/.github/workflows/github-security-advisory-alerts.yml",
+      "git_blob": "6224e78a038c4dcb8c05aa81af6b8c1b5363a306",
+      "original_mode": "100644"
+    },
+    {
+      "upstream_path": ".github/workflows/nightly-runner-cleanup.yml",
+      "reference_path": "upstream-workflow-snapshots/dyad/.github/workflows/nightly-runner-cleanup.yml",
+      "git_blob": "418f74263e33cf34fd51939f4802988616b4a47b",
+      "original_mode": "100644"
+    },
+    {
+      "upstream_path": ".github/workflows/playwright-comment.yml",
+      "reference_path": "upstream-workflow-snapshots/dyad/.github/workflows/playwright-comment.yml",
+      "git_blob": "cb80f11c20782dd894c9e71177a49202d89cd124",
+      "original_mode": "100644"
+    },
+    {
+      "upstream_path": ".github/workflows/pr-review-alerts.yml",
+      "reference_path": "upstream-workflow-snapshots/dyad/.github/workflows/pr-review-alerts.yml",
+      "git_blob": "0b5ea96f2e9bb43b7065f63e0661f8b496da673e",
+      "original_mode": "100644"
+    },
+    {
+      "upstream_path": ".github/workflows/pr-status-labeler.yml",
+      "reference_path": "upstream-workflow-snapshots/dyad/.github/workflows/pr-status-labeler.yml",
+      "git_blob": "c5c583d57e29876b7cda6ab411b1435a0ca11779",
+      "original_mode": "100644"
+    },
+    {
+      "upstream_path": ".github/workflows/release.yml",
+      "reference_path": "upstream-workflow-snapshots/dyad/.github/workflows/release.yml",
+      "git_blob": "ece79d6384a0d509703a3304caa6da180f308b9a",
+      "original_mode": "100644"
+    },
+    {
+      "upstream_path": ".github/workflows/remove-unauthorized-release.yml",
+      "reference_path": "upstream-workflow-snapshots/dyad/.github/workflows/remove-unauthorized-release.yml",
+      "git_blob": "478a796580c77b4c0efc7073b563c96935ab1a97",
+      "original_mode": "100644"
+    }
+  ]
+}
