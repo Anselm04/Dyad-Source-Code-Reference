@@ -1,36 +1,34 @@
-# Dyad source code — TrillionAI engineering reference
+# Dyad
 
-Independent research reference for studying how [Dyad](https://github.com/dyad-sh/dyad) builds, edits, previews and persists AI-generated applications.
+Dyad is a local, open-source AI app builder. It's fast, private, and fully under your control — like Lovable, v0, or Bolt, but running right on your machine.
 
-## Verified imported source
+[![Image](https://github.com/user-attachments/assets/f6c83dfc-6ffd-4d32-93dd-4b9c46d17790)](https://dyad.sh/)
 
-**[Browse the Dyad source snapshot](https://github.com/Anselm04/Dyad-Source-Code-Reference/tree/dyad-upstream-snapshot/upstream)**
+More info at: [https://dyad.sh/](https://dyad.sh/)
 
-- Source project: `dyad-sh/dyad`
-- Upstream commit: `1f3e4023af4bdd919be38e552b9494f6b10eb73f`
-- Matching Git tree SHA: `2a38832304f2de5b420862b4da9950a25767d189`
-- Git-tracked files: **4,052**
-- Imported Git branch: `dyad-upstream-snapshot`
-- Source folder: `upstream/`
-- [GitHub Actions import verification](https://github.com/Anselm04/Dyad-Source-Code-Reference/actions/runs/43506678771)
+## 🚀 Features
 
-The full **current Git-tracked source tree** of this upstream commit was verified. This is not its full commit history, private services, submodule payloads, or independent verification of Git LFS binaries.
+- ⚡️ **Local**: Fast, private and no lock-in.
+- 🛠 **Bring your own keys**: Use your own AI API keys — no vendor lock-in.
+- 🖥️ **Cross-platform**: Easy to run on Mac or Windows.
 
-## Original authorship and licensing
+## 📦 Download
 
-The original source belongs to Dyad's authors and contributors. Their original licence files are included unmodified in the snapshot:
+No sign-up required. Just download and go.
 
-- [Top-level LICENSE](https://github.com/Anselm04/Dyad-Source-Code-Reference/blob/dyad-upstream-snapshot/upstream/LICENSE): Apache-2.0 applies to material outside `src/pro/` unless otherwise noted.
-- [src/pro/LICENSE](https://github.com/Anselm04/Dyad-Source-Code-Reference/blob/dyad-upstream-snapshot/upstream/src/pro/LICENSE): Functional Source License 1.1, Apache-2.0 Future License, with competing-use restrictions.
+### [👉 Download for your platform](https://www.dyad.sh/#download)
 
-**Studying source does not grant blanket rights to copy restricted code into AppForge.** Research implementation ideas and independently write original TrillionAI Flutter and Node.js code. Preserve notices for any legally permitted reuse.
+## 🤝 Community
 
-## Engineering research priorities
+Join our growing community of AI app builders on **Reddit**: [r/dyadbuilders](https://www.reddit.com/r/dyadbuilders/) - share your projects and get help from the community!
 
-1. From prompt to concrete source files: generation and editing.
-2. Incremental changes, project persistence and recoverability.
-3. Build preview process and actual runtime validation.
-4. Error handling, repair loops, provider errors and cost controls.
-5. Export, deployment and end-to-end customer experience.
+## 🛠️ Contributing
 
-No reference source is automatically deployed, executed, merged into commercial products or given production credentials.
+**Dyad** is open-source (see License info below).
+
+If you're interested in contributing to dyad, please read our [contributing](./CONTRIBUTING.md) doc.
+
+## License
+
+- All the code in this repo outside of `src/pro` is open-source and licensed under Apache 2.0 - see [LICENSE](./LICENSE).
+- All the code in this repo within `src/pro` is fair-source and licensed under [Functional Source License 1.1 Apache 2.0](https://fsl.software/) - see [LICENSE](./src/pro/LICENSE).
