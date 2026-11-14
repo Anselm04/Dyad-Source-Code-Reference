@@ -1,0 +1,47 @@
+name: One-time Dyad FSL licence boundary cleanup
+on:
+  push:
+    paths:
+      - '.github/workflows/trillionai-license-boundary-once.yml'
+permissions:
+  contents: write
+jobs:
+  audit-and-filter:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+      - name: Filter FSL source and preserve licensing
+        shell: bash
+        run: |
+          set -euo pipefail
+          python3 - <<'PY'
+          import subprocess
+          from pathlib import Path
+          paths = [p for p in subprocess.check_output(["git", "ls-files", "-z"]).decode().split("\0") if p]
+          restricted = sorted(p for p in paths if p.startswith("src/pro/") and p != "src/pro/LICENSE")
+          for p in restricted:
+              subprocess.run(["git", "rm", "-q", "--", p], check=True)
+          d = Path(".trillionai")
+          d.mkdir(exist_ok=True)
+          (d / "LICENCE_BOUNDARY_AUDIT.md").write_text(
+              "# Dyad commercial FSL licence boundary audit\n\n"
+              "- Root LICENSE identifies `src/pro/` as separately licensed.\n"
+              "- The original `src/pro/LICENSE` specifies FSL-1.1-ALv2 and restrictions on competing services until a later conversion date per release.\n"
+              "- FSL implementation files removed from `main`: **" + str(len(restricted)) + "**\n"
+              "- FSL licence notice retained: **" + str("src/pro/LICENSE" in paths) + "**\n"
+              "- Files tracked before filtering: **" + str(len(paths)) + "**\n"
+              "- Existing permissively licensed source and original attribution retained.\n"
+              "- Earlier public Git commits and snapshot branches are not sanitised; full Git history remediation requires a separate review.\n"
+              "- Re-importers must filter restricted paths before source publication.\n",
+              encoding="utf-8")
+          print("REMOVED_FSL_FILES=" + str(len(restricted)))
+          PY
+          rm -f .github/workflows/trillionai-license-boundary-once.yml
+          git add -A
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git commit -m 'security(license): filter Dyad FSL source from main and preserve legal notices'
+          git push origin HEAD:main
